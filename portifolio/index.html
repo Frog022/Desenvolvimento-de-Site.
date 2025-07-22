@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+</head>
+
+
+<body>
+  <div id="particles-js"></div>
+  <script>
+  particlesJS('particles-js', 
+  {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 4,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "bounce": false
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        }
+      },
+      "modes": {
+        "grab": {
+          "distance": 140,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "push": {
+          "particles_nb": 4
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Sou um Motorista Executivo com anos de experiencia.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Entre em contato</h2>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label><br />
+      <input type="text" id="nome" name="nome" required /><br /><br />
+
+      <label for="email">E-mail:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="mensagem">Mensagem:</label><br />
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+   <div class="icones">
+    <a href="https://www.instagram.com/seuusuario" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/seulinkedin" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+
+</body>
+</html>

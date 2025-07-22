@@ -1,0 +1,128 @@
+#contato {
+  background-color: #ececec;
+  color: #000000;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding: 40px;
+  margin: 100px auto;
+  width: 60%;
+  border-radius: 18px;
+  box-shadow: 0px 4px 10px rgba(170, 21, 1, 0.911);
+}
+
+#sobre {
+  background-color:#eeeeee;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  margin: 40px auto;
+  width: 60%;
+  border-radius: 18px;
+  box-shadow: 0px 4px 10px  rgba(170, 21, 1, 0.911);
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+button {
+  background-color: #2c2c2c;
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8f3737;
+  color: #eeeeee;
+  transform: scale(1.2);
+}
+
+
+@keyframes vibrar {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+h2 {
+  animation: vibrar 10s infinite;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@keyframes sombraPulse {
+  0%, 100% {
+    text-shadow: 0 0 5px #575757;
+  }
+  50% {
+    text-shadow: 0 0 20px #535353;
+  }
+}
+
+label {
+  font-family: 'Poppins', Arial, sans-serif;
+  animation: sombraPulse 3s infinite;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fafafa;
+  color: #333;
+  box-sizing: border-box;
+  outline: none; /* remove o contorno padrão do foco */
+}
+
+input:focus, textarea:focus {
+  border-color: #800404; /* cor de destaque */
+  box-shadow: 0 0 8px #9e0202;
+  background-color: #fff;
+}
+
+
+
+
+
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Para ficar atrás do conteúdo */
+  background-color: #2c2c2e; /* Cor de fundo escura, pode mudar */
+}
+
+
+
+
+
+.icones {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.icones a {
+  text-decoration: none;
+}
+
+.icones i {
+  font-size: 40px;
+  color: #000000;
+  margin: 0 15px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icones i:hover {
+  transform: scale(1.3);
+  color: #ff4081;
+}
